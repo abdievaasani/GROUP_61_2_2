@@ -28,3 +28,7 @@ UPDATE test SET number  = 0 WHERE id = 5;
 DELETE FROM test WHERE id = 5;
 
 ALTER TABLE tasks ADD COLUMN date TEXT;
+
+ALTER TABLE tasks DROP COLUMN date;
+
+ALTER TABLE tasks ADD COLUMN completed INTEGER DEFAULT 0;
